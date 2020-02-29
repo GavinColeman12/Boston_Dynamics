@@ -1,0 +1,51 @@
+html, body {
+	margin: 0;
+}
+div {
+	border: 1px dotted black;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.header {
+	display: grid;
+	align-items: center;
+	height: 80px;
+	background-color: #eee;
+}
+.slider {
+	min-height: 400px;
+}
+.boxes {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.box {
+	min-height: 200px;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+.social {
+	min-height: 80px;
+}
+.footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	min-height: 400px;
+}
+@media screen and (max-width: 800px) {
+	.boxes {
+		grid-template-columns: 1fr 1fr;
+	}	
+	.footer {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+
+
+
+
+
